@@ -3,11 +3,11 @@ module.exports = {
     fontred: {
       shortcuts: {
         parsers: ['markdown', 'asciidoc', 'restructuredtext'],
-        start:   '@',
-        end:     '@'
+        start:   '++',
+        end:     '++'
       },
       process(content) {
-        return '<font color="red">' + content.body + '</font>';
+        return '<span style="font-size:120%;">' + content.body + '</span>';
       }
     }
   }
