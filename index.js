@@ -7,7 +7,7 @@ module.exports = {
         end:     '++'
       },
       process(content) {
-        return '<span style="font-size:120%;">' + content.body + '</span>';
+        return '<span style="font-size:140%;">' + content.body + '</span>';
       }
     }
   }
