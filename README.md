@@ -1,10 +1,10 @@
 # About this plugin
-This plugin is to make text red.
+This plugin is to change font size.
 
 # How to use this plugin
-Enclose the text to be red with `@`.
+Enclose the text to be red with `++`.
 
-> `hogehoge @red-text@ hogehoge.`
+> `hogehoge ++font size++ hogehoge.`
 
 
 
