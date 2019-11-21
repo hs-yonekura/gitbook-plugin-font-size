@@ -1,6 +1,6 @@
 module.exports = {
   blocks: {
-    fontred: {
+    fontsize: {
       shortcuts: {
         parsers: ['markdown', 'asciidoc', 'restructuredtext'],
         start:   '++',
