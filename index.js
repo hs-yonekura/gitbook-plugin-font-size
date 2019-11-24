@@ -7,7 +7,11 @@ module.exports = {
         end:     '++'
       },
       process(content) {
-        return '<span style="font-size:140%;">' + content.body + '</span>';
+        const config   = book.config.get('pluginsConfig.font-size', {});
+        var fontSize = "140";
+        if(config.fontsize !== undefined) fontSize = config.fontsize;
+
+        return '<span style="font-size:'  + String(fontSize) + '%">' content.body + '</span>';
       }
     }
   }
