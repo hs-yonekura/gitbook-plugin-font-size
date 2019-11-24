@@ -7,10 +7,10 @@ module.exports = {
         end:     '++'
       },
       process(content) {
-        const config   = book.config.get('pluginsConfig.font-size', {});
-        var fontSize = "140";
-        if(config.fontsize !== undefined) fontSize = config.fontsize;
-        return '<span style="font-size:'  + String(fontSize) + '%">' content.body + '</span>';
+        var size = '140%';
+        if(this.options.pluginsConfig['font-size'].fontSize !== undefined)
+          size = this.options.pluginsConfig['font-size'].fontSize;
+        return '<span style="font-size:' + size + ';">' + content.body + '</span>';
       }
     }
   }
